@@ -3,7 +3,6 @@
     $objUsuario = new AbmUsuario();
     $datos = data_submitted();
     $usuarioMod = $objUsuario->buscar($datos);
-    print_r($usuarioMod);
 
 ?>
 <!DOCTYPE html>
@@ -13,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Usuario</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="../Seguridad1/md5_archivos/md5.js"></script>
 </head>
 <body>
     <form method="post" action="Accion/actualizarLogin.php">

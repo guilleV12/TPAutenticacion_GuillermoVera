@@ -2,6 +2,7 @@
     include_once '../../configuracion.php';
     $datos = data_submitted();
     $objSession = new Session();
+    $datos['uspass'] = $datos['uspass'];
     if ($objSession->activa()){
         $objSession->cerrar();
         $objSession = new Session();
